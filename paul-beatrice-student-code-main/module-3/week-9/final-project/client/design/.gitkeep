@@ -1,0 +1,35 @@
+As an unauthenticated user, I can register and log in to access the full application.
+
+As an unauthenticated user, I can view homepage.
+
+As an unauthenticated user, I can submit my contact information for the company to reach out to me.
+
+As an ADMIN, I cna view all contact submissions in a table.
+
+As an ADMIN, I can create a new SEO package.
+
+As an ADMIN, I can edit an existing SEO package.
+
+As an ADMIN, I can delete an SEO package.
+
+As an ADMIN, I can generate a Google pageSpeed report for any website URL.
+
+As an ADMIN, I can view performance metrics like score, paint speed, and layout shift for any given URL.
+
+As an ADMIN, I can click "Home" to return to the homepage and sign out.
+
+
+
+| Endpoint               | Method    | Query Parameters                        | Description                          | Success | Error    | Authentication   |
+|:-----------------------|:---------:|:----------------------------------------|:-------------------------------------|:-------:|:---------|:-----------------|
+| /api/register          |  POST     | None                                    | Register a new user                  |   201   | 400, 422 | None             |
+| /api/login             |  POST     | None                                    | Login and get a token                |   200   | 401      | None             |
+| /api/packages          |  GET      | None                                    | Get all available SEO Packages       |   200   | 400      | ADMIN            |
+| /api/packages          |  POST     | None                                    | Create a new SEO Package             |   201   | 400, 422 | ADMIN            |
+| /api/packages/{id}     |  PUT      | None                                    | Update an existing SEO Package       |   200   | 404, 409 | ADMIN            |
+| /api/packages/{id}     |  DELETE   | None                                    | Delete an SEO Package                |   204   | 404      | ADMIN            |
+| /api/orders            |  GET      | None                                    | View all orders                      |   200   | 400      | ADMIN            |
+| /api/orders            |  POST     | None                                    | Place a new order                    |   201   | 400, 422 | AUTHENTICATED    |
+| /api/orders/{id}       |  GET      | None                                    | View a specific order                |   200   | 404      | AUTHENTICATED    |
+| /api/orders/{id}       |  PUT      | None                                    | Update an order status               |   200   | 404, 409 | AUTHENTICATED    |
+| /api/orders/{id}       |  DELETE   | None                                    | Cancel an order (Before Processing)  |   204   | 404      | AUTHENTICATED    |

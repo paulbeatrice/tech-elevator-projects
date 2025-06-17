@@ -1,0 +1,75 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36" version="24.8.6">
+  <diagram id="C5RBs43oDa-KdzZeNtuy" name="Page-1">
+    <mxGraphModel dx="2739" dy="1029" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="WIyWlLk6GJQsqaUBKTNV-0" />
+        <mxCell id="WIyWlLk6GJQsqaUBKTNV-1" parent="WIyWlLk6GJQsqaUBKTNV-0" />
+        <mxCell id="zkfFHV4jXpPFQw0GAbJ--17" value="&lt;&lt;Interface&gt;&gt;&#xa;Expense" style="swimlane;fontStyle=0;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=40;horizontalStack=0;resizeParent=1;resizeLast=0;collapsible=1;marginBottom=0;rounded=0;shadow=0;strokeWidth=1;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
+          <mxGeometry x="-82" y="800" width="302" height="90" as="geometry">
+            <mxRectangle x="550" y="140" width="160" height="26" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="zkfFHV4jXpPFQw0GAbJ--18" value="BigDecimal calculateCharge (long durationInHours) : &#xa;BigDecimal&#xa;" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="zkfFHV4jXpPFQw0GAbJ--17" vertex="1">
+          <mxGeometry y="40" width="302" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="QlU1Cfx2JYTfVYMoKWFC-3" value="ValetService" style="swimlane;whiteSpace=wrap;html=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="-80" y="400" width="300" height="240" as="geometry" />
+        </mxCell>
+        <mxCell id="QlU1Cfx2JYTfVYMoKWFC-8" value="&lt;u&gt;-&lt;/u&gt;Map&amp;lt;Integer, ParkingSpot&amp;gt; parkingSpots&lt;div&gt;-List&amp;lt;Customer&amp;gt; customers&lt;/div&gt;&lt;div&gt;-List&amp;lt;String&amp;gt; logs&lt;/div&gt;&lt;div&gt;-final int MAX_SPACES&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;strokeColor=default;" vertex="1" parent="QlU1Cfx2JYTfVYMoKWFC-3">
+          <mxGeometry y="20" width="300" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="QlU1Cfx2JYTfVYMoKWFC-36" value="+ checkInVehicle(Customer, Vehicle, int)&lt;div&gt;+ checkOutVehicle(int)&lt;/div&gt;&lt;div&gt;+ saveLogsToFile(String)&lt;/div&gt;&lt;div&gt;+ displayParkingSpots()&lt;/div&gt;&lt;div&gt;+ loadDataFromFiles(String, String)&lt;/div&gt;&lt;div&gt;+ calculateCharge(long): BigDecimal&lt;/div&gt;&lt;div&gt;+ generateInvoice(String, BigDecimal)&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="QlU1Cfx2JYTfVYMoKWFC-3">
+          <mxGeometry y="110" width="240" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="QlU1Cfx2JYTfVYMoKWFC-15" value="&lt;b&gt;Customer&lt;/b&gt;" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="-600" y="400" width="310" height="170" as="geometry" />
+        </mxCell>
+        <mxCell id="QlU1Cfx2JYTfVYMoKWFC-38" value="-String name&lt;div&gt;-String contactInfo&lt;/div&gt;&lt;div&gt;-List&amp;lt;Vehicle&amp;gt; vehicles&lt;/div&gt;&lt;div&gt;----------------------------------------------------------------------------&lt;/div&gt;&lt;div&gt;+ getName()&lt;/div&gt;&lt;div&gt;+ getContactInfo()&lt;/div&gt;&lt;div&gt;+ getVehicles() : List&amp;lt;Vehicle&amp;gt;&lt;/div&gt;&lt;div&gt;+ addVehicle(Vehicle)&lt;/div&gt;&lt;div&gt;+ toString()&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="QlU1Cfx2JYTfVYMoKWFC-15">
+          <mxGeometry y="30" width="310" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="QlU1Cfx2JYTfVYMoKWFC-48" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="QlU1Cfx2JYTfVYMoKWFC-39" target="QlU1Cfx2JYTfVYMoKWFC-3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="QlU1Cfx2JYTfVYMoKWFC-39" value="Vehicle&lt;div&gt;--------------------------------------------------------------------------&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;- String licensePlate&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;-String ownerName&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;-String make&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;-String model&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;-int year&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;-String color&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;--------------------------------------------------------------------------&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;+ getLicensePlate()&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;+ getOwnerName&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;+ getMake()&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;+ getModel()&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;+ getYear()&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;+ getColor()&lt;/div&gt;" style="whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="-80" y="20" width="300" height="300" as="geometry" />
+        </mxCell>
+        <mxCell id="QlU1Cfx2JYTfVYMoKWFC-40" value="" style="whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="440" y="400" width="300" height="300" as="geometry" />
+        </mxCell>
+        <mxCell id="QlU1Cfx2JYTfVYMoKWFC-41" value="&lt;div style=&quot;text-align: center;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;ParkingSpot&lt;/span&gt;&lt;/div&gt;&lt;div&gt;--------------------------------------------------------------------------&lt;/div&gt;&lt;div&gt;- int spotNumber&lt;/div&gt;&lt;div&gt;- boolean isOccupied&lt;/div&gt;&lt;div&gt;- String spotType&lt;/div&gt;&lt;div&gt;--------------------------------------------------------------------------&lt;/div&gt;&lt;div&gt;+ getSpotNumber()&lt;/div&gt;&lt;div&gt;+ isOccupied()&lt;/div&gt;&lt;div&gt;+ occupySpot()&lt;/div&gt;&lt;div&gt;+ vacateSpot()&lt;/div&gt;&lt;div&gt;+ toString()&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="440" y="400" width="300" height="300" as="geometry" />
+        </mxCell>
+        <mxCell id="QlU1Cfx2JYTfVYMoKWFC-42" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.429;exitY=0.026;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.599;entryY=1.003;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="zkfFHV4jXpPFQw0GAbJ--17" target="QlU1Cfx2JYTfVYMoKWFC-36">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="160" y="550" as="sourcePoint" />
+            <mxPoint x="-400" y="320" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="50" y="670" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="QlU1Cfx2JYTfVYMoKWFC-43" value="Implements" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="50" y="710" width="90" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="QlU1Cfx2JYTfVYMoKWFC-46" value="" style="endArrow=none;html=1;rounded=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="QlU1Cfx2JYTfVYMoKWFC-41" target="QlU1Cfx2JYTfVYMoKWFC-3">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="160" y="550" as="sourcePoint" />
+            <mxPoint x="210" y="500" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="QlU1Cfx2JYTfVYMoKWFC-49" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.75;entryDx=0;entryDy=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="QlU1Cfx2JYTfVYMoKWFC-38" target="QlU1Cfx2JYTfVYMoKWFC-8">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="QlU1Cfx2JYTfVYMoKWFC-50" value="Extends" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="310" y="490" width="70" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="QlU1Cfx2JYTfVYMoKWFC-51" value="Extends" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="70" y="350" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="QlU1Cfx2JYTfVYMoKWFC-52" value="Extends" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="-230" y="460" width="70" height="30" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

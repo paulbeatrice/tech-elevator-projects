@@ -1,0 +1,44 @@
+
+As an unauthenticated user, I can register a new account so that I can access the SEO-ECommerce-Application.
+
+As an unauthenticated user, I can log in with my credentials to access the full depth features of the application.
+
+As an authenticated user, I can view all available SEO packages that are for sale so that I can choose the best one for my business.
+
+As an authenticated user, I can purchase one of the SEO packages to improve my online presence and drive traffic to my website or social media page.
+
+As an authenticated user, I can view my past orders to help track my purchases.
+
+As an authenticated user, I can update my order status if necessary (ex. 'Cancel Order').
+
+
+As an 'Admin', I can create, update, or delete SEO packages to help manage the available services.
+
+As an 'Admin' I can view all orders placed by users to monitor any transactions.
+
+As an 'Admin' I can update the order status (ex. completed, pending, canceled).
+
+
+
+| Endpoint               | Method    | Query Parameters                        | Description                          | Success | Error    | Authentication   |
+|:-----------------------|:---------:|:----------------------------------------|:-------------------------------------|:-------:|:---------|:-----------------|
+| /api/register          |  POST     | None                                    | Register a new user                  |   201   | 400, 422 | None             |
+| /api/login             |  POST     | None                                    | Login and get a token                |   200   | 401      | None             |
+| /api/packages          |  GET      | None                                    | Get all available SEO Packages       |   200   | 400      | ADMIN            |
+| /api/packages          |  POST     | None                                    | Create a new SEO Package             |   201   | 400, 422 | ADMIN            |
+| /api/packages/{id}     |  PUT      | None                                    | Update an existing SEO Package       |   200   | 404, 409 | ADMIN            |
+| /api/packages/{id}     |  DELETE   | None                                    | Delete an SEO Package                |   204   | 404      | ADMIN            |
+| /api/orders            |  GET      | None                                    | View all orders                      |   200   | 400      | ADMIN            |
+| /api/orders            |  POST     | None                                    | Place a new order                    |   201   | 400, 422 | AUTHENTICATED    |
+| /api/orders/{id}       |  GET      | None                                    | View a specific order                |   200   | 404      | AUTHENTICATED    |
+| /api/orders/{id}       |  PUT      | None                                    | Update an order status               |   200   | 404, 409 | AUTHENTICATED    |
+| /api/orders/{id}       |  DELETE   | None                                    | Cancel an order (Before Processing)  |   204   | 404      | AUTHENTICATED    |
+
+
+
+
+
+
+
+
+

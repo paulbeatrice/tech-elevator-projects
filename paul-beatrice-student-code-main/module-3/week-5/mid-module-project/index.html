@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blackjack Minigame</title>
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+    <header>
+        <div class="logo-nav-container">
+            <img src="img/blackjackminigamelogo.png" alt="Blackjack Minigame Logo" class="logo" />
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Rules</a></li>
+                    <li><a href="#">Leaderboard</a></li>
+                </ul>
+            </nav>
+        </div>
+        <section id="chip-counter">
+            Chips: <span id ="chip-value">1000</span>
+        </section>
+    </header>
+
+    <main>
+        <section id="table">
+            <div id="dealer-section" class="player-area">
+                <h2>Dealer</h2>
+                <div class="card-container" id="dealer-cards"></div>
+                <p>Total: <span id="dealer-total">0</span></p>
+            </div>
+
+            <div id="player-section" class="player-area">
+                <h2>Player</h2>
+                <div class="card-container" id="player-cards"></div>
+                <p>Total: <span id="player-total">0</span></p>
+            </div>
+        </section>
+
+        <section id="betting">
+            <p>Place Your Bet:</p>
+            <div class="chip-buttons">
+                <button class="chip red" data-amount="25">25</button>
+                <button class="chip green" data-amount="50">50</button>
+                <button class="chip black" data-amount="100">100</button>
+            </div>
+            <p>Current Bet: <span id="current-bet">0</span></p>
+        </section>
+
+        <section id="controls">
+            <button id="deal-btn">Deal Cards</button>
+            <button id="hit-btn">Hit</button>
+            <button id="stand-btn">Stand</button>
+            <button id="split-btn">Split</button>
+            <button id="restart-btn">Restart</button>
+            <button id="rules-btn">Rules</button>
+        </section>
+
+        <section id="rules" hidden>
+            <h3>Blackjack Rules</h3>
+            <ul>
+                <li>Try to get as close to 21 as possible without going over.</li>
+                <li>Dealer's total is randomly generated between 16-21.</li>
+                <li>You can "Hit" to be dealt another card or "Stand" to end your turn.</li>
+                <li>If your first two cards match, you can "Split" your hand.</li>
+                <li>Beat the dealer's hand to win your bet.</li>
+                <li>Double-click this box to hide the rules.</li>
+            </ul>
+        </section>
+
+        <!---Overlay For Win/Loss-->
+        <div id="overlay" class="overlay hidden">
+            <h1 id="overlay-text"></h1>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Blackjack Minigame | Wins: <span id="wins">0</span> | Losses: <span id="losses">0</span></p>
+    </footer>
+    
+    <script src="script/app.js"></script>
+</body>
+</html>

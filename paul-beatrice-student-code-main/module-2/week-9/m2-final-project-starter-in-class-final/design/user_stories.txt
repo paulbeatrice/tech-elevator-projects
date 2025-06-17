@@ -1,0 +1,13 @@
+As a unauthenticated user, I can view all movies
+As an authenticated user, I can view all of my collections
+As an authenticated user, I can create a collection
+As an authenticated user, I can add a movie to my collection
+As an authenticated user, I can remove a movie from my collection
+
+
+
+1. GET /movies 200
+2. GET /collections 200 401
+3. POST /collections 201 400
+4. POST /collections/collection_id/movie/id 201 400
+5. DELETE /collections/collection_id/movie/movie_id 204 404

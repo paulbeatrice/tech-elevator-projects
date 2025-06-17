@@ -1,0 +1,31 @@
+User Statements
+
+As an application user I am able to check in a vehicle
+
+As an application user I am able to enter the customer name
+
+As an application user I am able to assign a license plate number (6 Digits)
+
+As an application user I am able to input the Make of the car
+
+As an application user I am able to input the model of the car
+
+As an application user I am able to input the year of the car
+
+As an application I am able to input color of the car
+
+As an application user I am able to assign the vehicle a parking spot number
+
+As an application user I am able to check out a car
+
+As an application user I am able to view parking spots to see which are occupied
+
+As an application user I am able to view the parking spots to see which are not occupied
+
+As an application user I am able to calculate the cost of the parking time
+
+As an application user I am able to assess whether or not the vehicle is an overnight stay
+
+As an application user I am able to generate an Invoice for the customer
+
+As an application user I am able to save the data to logs

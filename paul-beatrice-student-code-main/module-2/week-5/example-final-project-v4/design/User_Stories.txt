@@ -1,0 +1,9 @@
+1. As an application user, I can list all of the songs that are available to my iPod
+2. As an application user, I can enqueue any of the songs to my Playlist
+3. As an application user, I can "play" the next song on my Playlist
+4. As an application user, I can "skip" the next song on my Playlist
+5. As an application user, I can "skip" to the previous song on my Playlist
+6. As an application user, I can view the log of my actions
+
+
+

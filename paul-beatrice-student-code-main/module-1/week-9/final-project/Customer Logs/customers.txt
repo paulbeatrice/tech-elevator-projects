@@ -1,0 +1,34 @@
+Generated Invoice for jk: $40.00
+Checked out vehicle from spot 18
+Checked out vehicle from spot 18
+Checked out vehicle from spot 56
+Generated Invoice for jk: $40.00
+Checked out vehicle from spot 18
+Checked out vehicle from spot 56
+Generated Invoice for jk: $40.00
+Checked out vehicle from spot 33
+Generated Invoice for paul: $20.00
+Checked in Vehicle: License Plate klm123, Make kia, Model optima, Year 2013,Color white to spot 33 for customer paul
+Checked out vehicle from spot %d 33
+Checked in Vehicle: License Plate wrm333, Make kia, Model optima, Year 2013,Color white to spot 33 for customer paul
+Checked out vehicle from spot: 33
+Checked in Vehicle: License Plate: klo234, Make: kia, Model: optima, Year: 2013,Color: white to spot 33 for customer: paul
+Checked in Vehicle: License Plate: krm123, Make: kia, Model: optima, Year: 2013,Color: white to spot 45 for customer: JK
+Checked out vehicle from spot: 45
+Checked in Vehicle: License Plate: krm123, Make: kia, Model: optima, Year: 2013,Color: white to spot 33 for customer: paul
+Checked out vehicle from spot: 33
+Checked in Vehicle: License Plate: wrx445, Make: toyota, Model: camry, Year: 2022,Color: black to spot 32 for customer: jk
+Checked in Vehicle: License Plate: ews333, Make: kia, Model: optima, Year: 2018, Color: black to spot 72 for customer: jk
+Checked in Vehicle: License Plate: wrx789, Make: Kia, Model: Optima, Year: 2013, Color: White to spot 39 for customer: paul
+Checked in Vehicle: License Plate: wrx789, Make: Kia, Model: Optima, Year: 2013, Color: White to spot 39 for customer: paul
+Checked out vehicle from spot: 39
+Checked in Vehicle: License Plate: plz345, Make: kia, Model: optima, Year: 2013, Color: white to spot 87 for customer: 
+Checked in Vehicle: License Plate: plz345, Make: kia, Model: optima, Year: 2013, Color: white to spot 87 for customer: 
+Checked out vehicle from spot: 87
+Checked in Vehicle: License Plate: plz345, Make: kia, Model: optima, Year: 2018, Color: white to spot 56 for customer: joe
+Checked in Vehicle: License Plate: plz345, Make: kia, Model: optima, Year: 2018, Color: white to spot 56 for customer: joe
+Checked in Vehicle: License Plate: plz902, Make: kia, Model: optima, Year: 2018, Color: white to spot 84 for customer: 
+Checked in Vehicle: License Plate: plz999, Make: kia, Model: optima, Year: 2018, Color: white to spot 65 for customer: 
+Checked in Vehicle: License Plate: plz333, Make: kia, Model: optima, Year: 2018, Color: white to spot 32 for customer: joe
+Checked in Vehicle: License Plate: wrx789, Make: kia, Model: optima, Year: 2013, Color: white to spot 33 for customer: paul
+Checked out vehicle from spot: 33

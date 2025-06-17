@@ -1,0 +1,7 @@
+WRX347;John Smith;Toyota;Rav4;2018;Grey
+TRF123;Joanne Kathlyn Beatrice;Tesla;Model 3;2020;White
+ADS589;Robert Beatrice;Nissan;Frontier;2021;Red
+FDH333;Bobby Beatrice;Hyundai;Sonata;2013;Black
+MNK567;George Beatrice;Hyundai;Santa Fe;2023;Green
+WEA978;Bridgette Clark;Kia;Sorento;2022;Black
+WRT333;Paul Beatrice;Kia;Optima;2013;White
