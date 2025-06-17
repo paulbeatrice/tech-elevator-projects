@@ -22,14 +22,9 @@ Over the course of 30 weeks, I completed a structured, full-stack curriculum foc
 
 |---- Module - 3 # JavaScript/ Vue.js,  HTML & CSS, 
         & Final Capstone: Full-stack web application
-
-        |
-        |
-        |
-        |
-        -------> Resources # Supporting files (setup scripts, IntelliJ configs, etc. )
-
-
+        
+        
+|---- Resources # Supporting files (setup scripts, IntelliJ configs, etc. )
 
 |---- Technologies Used: 
 
